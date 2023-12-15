@@ -1,0 +1,844 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: tahoma;
+}
+
+html,body{
+	height: 100%;
+}
+
+.center{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/* Reset para Mobile */
+
+input,textarea{
+		border-radius: 0;
+		-webkit-appearance:none;
+		-not-appearance:   none;
+		appearance:        none;
+}
+
+textarea{
+	resize: none;
+	overflow-y: auto;
+}
+
+input[type=text]:focus,input[type=password]:focus,textarea:focus,
+select:focus,input[type=email],input[type=submit]{
+	outline: none;
+}
+
+/* Fim do reset mobile */
+
+header{
+	height: 80px;
+	padding: 0 2%;
+	background-color: black;
+}
+
+.logo{
+	float: left;
+	text-align: left;
+	margin-top: 25px;
+}
+
+.logo h2{
+	color: white;
+	font-weight: normal;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+nav.general{
+	float: right;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+	text-align: right;
+	margin-top: 25px;
+	cursor: pointer;
+}
+
+nav.general ul{
+	position: absolute;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	width: 200px;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	text-align: center;
+	display: none;
+	z-index: 8;
+}
+
+nav.general ul li{
+	padding: 10px 0;
+}
+
+nav.general ul li:hover{
+	background-color: #ccc;
+}
+
+nav.general ul a{
+	text-decoration: none;
+	color: white;
+}
+
+section.sessao1{
+	height: 630px;
+	background-image: url('../images/img1.jpeg');
+	background-size: cover;
+	background-position: center 6%;
+}
+
+section.sessao1 .center{
+	position: relative;
+	height: 100%;
+}
+
+.content-sessao1{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 450px;
+	padding: 40px 2%;
+	background-color: rgba(0,0,0,0.8);
+	border-top: 4px solid #CF233D;
+	text-align: left;
+}
+
+.content-sessao1 h2{
+	color: white;
+}
+
+.content-sessao1 p{
+	margin-top: 25px;
+	color: white;
+	line-height: 25px;
+	font-style: italic;
+}
+
+.content-sessao1 a{
+	display: block;
+	width: 140px;
+	height: 44px;
+	border: 1PX solid #CF233D;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+/* Sessão 2 */
+
+section.sessao2{
+	height: 310px;
+	background-color: #CF233D;
+	padding: 0 2% 0 2%; 
+}
+
+section.sessao2 .center{
+	height: 100%;
+}
+
+.content-sessao2{
+	float: left;
+	width: 70%;
+	height: 100%;
+	padding: 50px 0 80px 0;
+}
+
+.content-sessao2 h2{
+	color: white;
+}
+
+.content-sessao2 p{
+	margin-top: 20px;
+	color: white;
+}
+
+.content-sessao2 a{
+	display: block;
+	border: 1px solid white;
+	width: 140px;
+	height: 44px;
+	line-height: 40px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+.content-sessao2 a:hover{
+	color: rgb(193, 193, 193);
+}
+
+.img-sessao2{
+	float: left;
+	width: 30%;
+	height: 398px;
+	background-image: url('../images/img2.jpeg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: -120px;
+}
+
+/* Sessão 3 */
+
+section.sessao3{
+	padding: 50px 2% 50px 0;
+}
+
+.side1-img{
+	float: left;
+	width: 50%;
+	height: 580px;
+	background-image: url('../images/img4-mobile.jpeg');
+	background-size: cover;	
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.side2-text{
+	float: left;
+	width: 50%;
+	padding-left: 80px;
+}
+
+.side2-text h2{
+	color: #CF233D;
+	margin-top: 60px;
+}
+
+.side2-text p{
+	margin-top: 20px;
+	line-height: 27px;
+}
+
+.side2-text a{
+	display: inline-block;
+	width: 160px;
+	height: 44px;
+	color: white;
+	background-color: #CF233D;
+	text-align: center;
+	line-height: 44px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.side2-text a:hover{
+	background-color: #bf2239;
+}
+
+/* Sessão 4 */
+
+section.sessao4{
+	padding: 50px 2%;
+	background-color: #EEEEEE;
+}
+
+.box-sessao4{
+	float: left;
+	width: calc(100% / 3);
+	background-color: white;
+	border: 10px solid #EEEEEE;
+}
+
+.img-sessao4{
+	width: 100%;
+	height: 400px;
+	padding: 0 50px;
+}
+
+.box-sessao4:nth-of-type(2) .img-sessao4{
+	padding: 0 30px;
+}
+
+.img-sessao4-wraper{
+	width: 100%;
+	height:100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.box-sessao4:nth-of-type(2) .img-sessao4-wraper{
+	background-position: 80%;
+}
+
+.box-wraper-sessao4{
+	padding: 0 50px 30px 50px;
+}
+
+.box-sessao4 h2{
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.box-sessao4 p{
+	margin-top: 20px;
+	line-height: 27px;
+}
+
+/* Sessão 5 */
+
+section.sessao5{
+	height: 500px;
+	background-image: url('../images/img8.jpeg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+section.sessao5 h2{
+	display: inline-block;
+	margin-top: 140px;
+	width: 100%;
+	color: white;
+	font-size: 36px;
+	padding: 0 100px;
+}
+
+section.sessao5 a{
+	display: inline-block;
+	width: 160px;
+	height: 44px;
+	border: 2px solid #CF233D;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+section.sessao5 a:hover{
+	border: 2px solid transparent;
+}
+
+/* Sessão 6 */
+
+section.sessao6{
+	padding: 50px 2%;
+	text-align: center;
+}
+
+section.sessao6 .center h2{
+	font-size: 25px;
+	color: #CF233D;
+}
+
+section.sessao6 p{
+	margin-top: 25px;
+}
+
+.box-img-sessao6{
+	margin-top: 60px;
+}
+
+.img-only{
+	float: left;
+	width: 35%;
+	height: 520px;
+	background-image: url('../images/img9.jpg');
+	background-size: cover;
+	background-position: center 20%;
+}
+
+.four-imgs{
+	float: left;
+	width:65%;
+	height: 520px;
+}
+
+.four-imgs-wraper{
+	float: left;
+	width: calc(100% / 2);
+	height:50%;
+	background-size: cover;
+	background-position: center;
+	border:6px solid white;
+}
+
+.four-imgs-wraper:nth-of-type(1){
+	border-top: 0;
+}
+
+.four-imgs-wraper:nth-of-type(2){
+	border-top: 0;
+}
+
+.four-imgs-wraper:nth-of-type(3){
+	border-bottom: 0;
+}
+
+.four-imgs-wraper:nth-of-type(4){
+	border-bottom: 0;
+}
+
+/* Sessão form */
+
+section.sessao-form{
+	padding: 0 2% 50px 2%;
+}
+
+section.sessao-form .center h2{
+	margin-bottom: 20px;
+	color: #CF233D;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	padding-right: 60px;
+}
+
+form input[type=text],
+form input[type=email]{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+	padding-left: 8px;
+	border: 2px solid #ccc;
+}
+
+form input[type=text]::placeholder,
+form input[type=email]::placeholder,
+form textarea::placeholder{
+	color: #ccc;
+}
+
+form textarea{
+	width: 100%;
+	height: 120px;
+	resize: vertical;
+	padding: 8px;
+	border: 2px solid #ccc;
+}
+
+form input[type=submit]{
+	width: 140px;
+	height: 35px;
+	background-color: #CF233D;
+	line-height: 31px;
+	border: 0;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+form input[type=submit]:hover{
+	color: #dbdbdb;
+	background-color: #cf233d;
+}
+
+.img-sessao-form{
+	float: left;
+	width: 50%;
+	height: 400px;
+	background-image: url('../images/img3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* Sessão client */
+
+section.sessao-client{
+	height: 600px;
+	padding: 50px 2%;
+	background-image: url('../images/img13.jpeg');
+	position: relative;
+}
+
+.overlay-sessao-client{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+section.sessao-client .center{
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+section.sessao-client .center > h2{
+	color:white;
+}
+
+.line-only{
+	display: inline-block;
+	width: 60px;
+	height: 3px;
+	background-color: #CF233D;
+	margin-top: 25px;
+}
+
+.content-sessao-client{
+	margin-top: 150px;
+}
+
+.box-sessao-client{
+	float: left;
+	width: 50%;
+}
+
+.box-client-wraper{
+	float: right;
+	background-color: white;
+	padding: 60px 50px;
+	border-radius: 8px;
+	max-width: 450px;
+	height:260px;
+	position: relative;
+}
+
+.img-box-client{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: -100px;
+	left: -120px;
+}
+
+.box-client-wraper p{
+	line-height: 26px;
+}
+
+.box-client-wraper h2{
+	float: right;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #555;
+}
+
+/* Footer */
+
+footer{
+	background-color: #1A1A1A;
+}
+
+.box-footer{
+	padding: 70px 2%;
+}
+
+.box-footer p{
+	color: white;
+	float: left;
+}
+
+.box-wraper-footer{
+	float: right;
+}
+
+.box-wraper-footer img{
+	float: left;
+	margin-right: 50px;
+}
+
+.social-midia{
+	float: left;
+}
+
+.social-midia i{
+	display: inline-block;
+	color: white;
+	margin: 0 6px;
+	font-size: 22px;
+}
+
+.box-final-footer{
+	background-color: #333333;
+	padding: 40px 2%;
+	text-align: center;
+}
+
+.box-final-footer p{
+	color: white;
+}
+
+.box-final-footer p a{
+	color: #efa083;
+	cursor: pointer;
+}
+
+@media screen and (max-width:1200px){
+
+	section.sessao3 .center{
+		max-width: 900px;
+	}
+
+	section.sessao4 .center{
+		max-width: 900px;
+	}
+
+	.img-sessao4{
+		padding: 0!important;
+	}
+
+	section.sessao6 .center{
+		max-width: 900px;
+	}
+
+	section.sessao-client .center{
+		max-width: 900px;
+	}
+
+	.box-sessao-client:nth-of-type(1){
+		padding-right:40px;
+	}
+
+	.box-sessao-client:nth-of-type(2){
+		padding-left: 60px;
+	}
+
+	.img-box-client{
+		left: -50px;
+		top: -50px;
+		width: 80px;
+		height: 80px;
+}
+
+}
+
+@media screen and (max-width:992px){
+
+	section.sessao1 .center{
+		text-align: center;
+	}
+
+	.content-sessao1{
+		max-width: 350px;
+	}
+
+	.content-sessao2{
+		width: 60%;
+	}
+
+	.img-sessao2{
+		width: 40%;
+	}
+
+	section.sessao3 .center{
+		max-width: 700px;
+	}
+
+	section.sessao4 .center{
+		max-width: 700px;
+	}
+
+	.img-sessao4{
+		height: 300px;
+	}
+
+	.box-wraper-sessao4{
+		padding: 20px 10px;
+	}
+
+	section.sessao5{
+		background-position: 90%;
+	}
+
+	section.sessao5 h2{
+		font-size: 28px;
+}
+
+	section.sessao6 .center{
+		max-width: 730px;
+	}
+
+	section.sessao-client .center{
+		max-width: 700px;
+	}
+
+}
+
+@media screen and (max-width:768px){
+
+	section.sessao2{
+		padding: 50px 0;
+		height: auto;
+	}
+
+	section.sessao2 .center{
+		text-align: center;
+	}
+
+	.content-sessao2{
+		float: none;
+		display: inline-block;
+		width:60%;
+		padding: 0;
+	}
+
+	.content-sessao2 a{
+		display: inline-block;
+	}
+
+	.img-sessao2{
+		float: none;
+		display: inline-block;
+		width: 60%;
+		position: static;
+		margin-top: 50px;
+	}
+
+	section.sessao3 .center{
+		text-align: center;
+	}
+
+	.side1-img{
+		float: none;
+		display: inline-block;
+		width: 70%;
+	}
+
+	.side2-text{
+		float: none;
+		display: inline-block;
+		width: 70%;
+		padding: 0;
+		text-align: left;
+	}
+
+	section.sessao4 .center{
+		text-align: center;
+	}
+
+	.box-sessao4{
+		float: none;
+		display: inline-block;
+		width: 80%;
+	}
+
+	section.sessao6 .center{
+		text-align: center;
+	}
+
+	.img-only{
+		float: none;
+		display: inline-block;
+		width: 80%;
+	}
+
+	.four-imgs{
+		float: none;
+		display: inline-block;
+		width: 80%;
+		height: auto;
+	}
+
+	.four-imgs-wraper{
+		width: 100%;
+		height: 250px;
+		margin-top: 8px;
+	}
+
+	.four-imgs .four-imgs-wraper:nth-of-type(2){
+		background-position: center 15%;
+	}
+
+	section.sessao-form .center{
+		text-align: center;
+	}
+
+	.form{
+		float: none;
+		display: inline-block;
+		width: 80%;
+		padding: 0;
+	}
+
+	section.sessao-client{
+		height: auto;
+	}
+
+	.img-sessao-form{
+		float: none;
+		display: inline-block;
+		width: 80%;
+		margin-top: 50px;
+	}
+
+	.box-sessao-client{
+		float: none;
+		display: inline-block;
+		width: 80%;
+		padding: 0!important;
+		margin-top: 70px;
+	}
+
+	.box-footer p{
+		float: none;
+		display: inline-block;
+		width: 80%;
+		text-align: center;
+	}
+
+	.box-wraper-footer{
+		float: none;
+		display: inline-block;
+		width: 80%;
+		text-align: center;
+	}
+
+	.box-wraper-footer img{
+		float: none;
+		display: inline-block;
+		margin-top: 35px;
+	}
+
+	.social-midia{
+		width: 100%;
+		margin-top: 35px;
+	}
+
+}
+
+@media screen and (max-width:580px){
+
+
+	.content-sessao2{
+		width: 80%;
+	}
+
+	.content-sessao2 h2{
+		font-style: 23px;
+	}
+
+	.img-sessao2{
+		width: 80%;
+	}
+
+	.img-sessao-form{
+		width: 70%;
+	}
+
+	.box-sessao-client{
+		width: 70%;
+	}
+
+}
