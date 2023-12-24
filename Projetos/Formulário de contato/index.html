@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Bebas+Neue&family=DM+Serif+Display&family=Dancing+Script&family=EB+Garamond&family=Hind+Siliguri:wght@500&family=Josefin+Sans:ital,wght@0,500;1,400&family=Kanit:wght@300&family=Lato&family=Montserrat&family=Nunito+Sans:wght@300&family=Open+Sans:wght@300;700;800&family=Oswald&family=PT+Sans&family=Red+Hat+Display:wght@400;500;700&family=Righteous&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400&family=Rowdies:wght@300&family=Sigmar&family=Teko:wght@500&family=Ubuntu:ital@1&family=Ysabeau:wght@500&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário de contato</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="shortcut icon" type="image-x/png" href="icone-site.ico">
+</head>
+<body>
+
+	<section class="formulario">
+		<div class="form-contato">
+			<h2>Preencha o formulário</h2>
+			<form id="form_contato" method="post" action="form.php">
+				<div class="input-wraper w100">
+					<p>*Nome</p>
+					<input required type="text" name="nome" placeholder="Nome">
+				</div><!--input-wraper-->
+
+				<div class="input-wraper w100">
+					<p>*E-mail</p>
+					<input required type="text" name="email" placeholder="Nome">
+				</div><!--input-wraper-->
+
+				<div class="input-wraper w100">
+					<p>*Telefone</p>
+					<input required type="text" name="telefone" placeholder="Nome">
+				</div><!--input-wraper-->
+				<div class="clear"></div>
+
+				<h2>Qual seu estado?</h2>
+				<div class="input-wraper w100">
+					<input id="check1" type="checkbox" name="acao">
+					<label for="check1"><div class="circle"></div></label>
+					<span>Bahia</span>
+				</div><!--input-wraper-->
+
+				<div class="input-wraper w100">
+					<input id="check2" type="checkbox" name="acao">
+					<label for="check2"><div class="circle"></div></label>
+					<span>Rio de Janeiro</span>
+				</div><!--input-wraper-->
+
+				<div class="input-wraper w100">
+					<input id="check3" type="checkbox" name="acao">
+					<label for="check3"><div class="circle"></div></label>
+					<span>São Paulo</span>
+				</div><!--input-wraper-->
+
+				<div class="input-wraper w100">
+					<textarea name="mensagem" placeholder="Mensagem"></textarea>
+				</div><!--input-wraper-->
+
+				<div class="input-wraper w100" style="text-align: center;">
+					<input type="submit" name="acao" value="Enviar">
+				</div><!--input-wraper-->
+
+			</form>
+		</div><!--form-contato-->
+	</section><!--formulario-->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/jquery.ajaxform.js"></script>
+<script>
+	
+	$('#form_contato').submit(function(){
+
+		if(formularioPreenchido()){
+
+			var form = $('#form_contato');
+			$('#form_contato').ajaxSubmit({
+				beforeSend:function(){
+				form.find('input[type=submit]').attr('disabled','true');
+				form.find('input[type=submit]').animate({'opacity':'0.4'})
+				form.find('input[type=submit]').attr('value','Carregando');
+				
+			},
+			success:function(data){
+				alert('Seja bem-vindo(a)')
+				form.find('input[type=submit]').attr('enabled');
+				form.find('input[type=submit]').animate({'opacity':'1'})
+				form.find('input[type=submit]').attr('value','Enviar');
+				
+			 	form[0].reset();
+			}
+			})
+
+		}else{
+			alert('Campos vazios não são permitidos!')
+		}
+
+		
+
+		function formularioPreenchido(){
+			var nome = $('input[name=nome]').val();
+			var email = $('input[ñame=email]').val();
+			var telefone = $('input[name=telefone]').val()
+			var mensagem = $('input[name=mensagem]').val()
+
+			if(nome == '' || email == '' || telefone == '' || mensagem == ''){
+				return false;
+			}else{
+				return true;
+			}
+		}
+
+	})
+
+
+
+</script>
+</body>
+</html>

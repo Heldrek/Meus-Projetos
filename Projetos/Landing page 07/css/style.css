@@ -1,0 +1,585 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	padding: 20px 2%;
+	height: 92vh;
+	background-image: url("../imagens/capa.png");
+	background-size: cover;
+	background-position: center;
+}
+
+header .logo{
+	width: 200px;
+	height: 50px;
+	background-color: #b4b4b4;
+	float: left;
+}
+
+header nav.desktop{
+	float: right;
+	height: 50px;
+}
+
+header nav.desktop ul{
+	list-style-type: none;
+}
+
+header nav.desktop ul li{
+	float: left;
+	padding: 0 20px;
+	line-height: 50px;
+}
+
+header nav.desktop ul a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+header nav.desktop ul a:hover{
+	color: #b4b4b4;
+}
+
+header nav.mobile{
+	float: right;
+	width: 32px;
+	height: 32px;
+	background-image: url("../imagens/menu.png");
+	background-position: center;
+	cursor: pointer;
+	display: none;
+	margin-top: 10px;
+}
+
+header nav.mobile ul{
+	position: absolute;
+	left: 0;
+	top: 80px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+
+header nav.mobile ul{
+	opacity: 0;
+}
+
+header nav.mobile ul li{
+	padding: 10px 0;
+	transition: 0.4s;
+}
+
+header nav.mobile ul li:hover{
+	background-color: #ccc;
+}
+
+header nav.mobile ul a{
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+}
+
+header .chamada1{
+	float: right;
+	margin-top: 250px;
+	margin-left: 80px;
+	margin-right: 140px;
+}
+
+.chamada1 h2{
+	color: white;
+	font-weight: normal;
+	text-align: left;
+	font-size: 35px;
+}
+
+.chamada1 p{
+	color: white;
+	max-width: 650px;
+	margin-top: 10px;
+}
+
+/*  FIM SESSÃO HEADER */
+
+section.sessao1-home{
+	height: 400px;
+	background-color: #472562;
+	padding: 0 2%;
+}
+
+section.sessao1-home .container{
+	max-width: 1000px;
+}
+
+.half1-sessao1-home{
+	float: left;
+	width: 50%;
+	margin-top:90px;
+	color: white;
+}
+
+.half1-wraper-sessao1-home{
+	position: relative;
+	left: 140px;
+	top: 0;
+}
+
+.half1-wraper-sessao1-home h2{
+	font-weight: normal;
+}
+
+.half1-wraper-sessao1-home p{
+	margin-top: 15px;
+}
+
+.half1-sessao1-home ul{
+	list-style-position: inside;
+	margin-top: 15px;
+
+}
+
+.half1-wraper-sessao1-home ul li{
+	padding: 5px 0;
+}
+
+.btn1{
+	width: 170px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 22px;
+	background-color: #FF703D;
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.half2-sessao1-home{
+	width: 50%;
+	float: left;
+}
+
+.img-half2-sessao1-home{
+	width: 100%;
+	height: 430px;
+	background-image: url("../imagens/device.png");
+	background-size: 100% 100%;
+	position: relative;
+	top: -30px;
+	left: 0;
+}
+
+/* FINAL DA SESSAO1 */
+
+section.sessao2-home{
+	text-align: center;
+	background-color:#E3CEB4;
+	padding: 60px 4%;
+}
+
+section.sessao2-home h2{
+	color: #472562;
+}
+
+section.sessao2-home p{
+	max-width: 700px;
+	display: inline-block;
+	margin-top: 20px;
+	text-align: justify;
+	color: #472562;
+}
+
+section.sessao2-home img{
+	position: relative;
+	left: 0;
+	top: 120px;
+	max-width: 100%;
+}
+
+/* FIM DA SESSAO 2 */
+
+section.sessao3-home{
+	display: flex;
+}
+
+.side1-sessao3-home{
+	width: 50%;
+	padding: 90px 0 90px 4%;
+	background-color: #835FA7;
+}
+
+.side1-wraper-sessao3-home{
+	float: right;
+	max-width: 500px;
+	margin-right: 40px;
+}
+
+.side1-wraper-sessao3-home p{
+	line-height: 28px;
+}
+
+.side1-wraper-sessao3-home h2{
+	color: white;
+	font-weight: normal;
+}
+
+.side1-wraper-sessao3-home p{
+	color: white;
+	margin-top: 10px;
+}
+
+.side2-sessao3-home{
+	width: 50%;
+	padding: 90px 4% 90px 0;
+}
+
+.author-main{
+	padding-left: 40px;
+}
+
+.author-wraper{
+	float: left;
+}
+
+.author-wraper p{
+	font-size: 14px;
+}
+
+.img-author{
+	float: left;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-image: url("../imagens/me.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.author2-main{
+	width: 100%;
+	margin-top: 10px;
+	display: block;
+
+}
+
+.author2-main p{
+	max-width: 500px;
+}
+
+.author2-main div{
+	margin-top: 10px;
+}
+
+.author2-main div span{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #b4b4b4;
+	display: inline-block;
+}
+
+.author-main div span:first-child{
+	background-color: rgb(110,110,110);
+}
+
+/* FINAL SESSAO3 */
+
+section.sessao-final-home{
+	padding: 90px 4%;
+	background-color: #472563;
+}
+
+.form-sessao-final{
+	width: 50%;
+	float: left;
+}
+
+.form-sessao-final h2{
+	color: white;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.form-sessao-final p{
+	max-width: 400px;
+	margin-top: 8px;
+	color: white;
+	font-style: italic;
+}
+
+form{
+	margin-top:20px;
+}
+
+form .input-wraper{
+	margin-top: 8px;
+}
+
+.w50{
+	width: 45%;
+	float: left;
+	padding: 0 6px;
+}
+
+.w100{
+	width: 90%;
+	padding:0 6px;
+}
+
+.input-wraper input[type=text]{
+	width: 100%;
+	height: 55px;
+	padding-left: 8px;
+	line-height: 55px;
+	border: 0;
+	outline: none;
+	border-radius: 10px;
+	color: #b4b4b4;
+}
+
+.input-wraper input[type=email]{
+	width: 100%;
+	height: 55px;
+	padding-left: 8px;
+	line-height: 55px;
+	border: 0;
+	outline: none;
+	border-radius: 10px;
+}
+
+.input-wraper textarea{
+	width: 100%;
+	height: 120px;
+	padding: 8px;
+	border: 0;
+	outline: none;
+	border-radius: 10px;
+}
+
+.input-wraper input[type=submit]{
+	border: 0;
+	font-size: 16px;
+}
+
+.input-wraper input[type=submit]:hover{
+	background-color: rgba(255, 112, 61,0.7);
+}
+
+.mapa{
+	width: 50%;
+	float: left; 
+}
+
+.mapa-wraper{
+	max-width: 500px;
+	height: 500px;
+	margin-left: 40px;
+	position: relative;
+}
+
+#mapa-wraper2{
+	width: 100%;
+	height: 100%;	
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+/* FIM DA SESSÃO FINAL */ 
+
+footer{
+	padding: 70px 0;
+	background-color: #000000;
+	color: white;
+}
+
+footer p:nth-of-type(1){
+	float: left;
+	margin-left: 170px;
+}
+
+footer p:nth-of-type(2){
+	float: right;
+	margin-right: 170px;
+}
+
+@media screen and (max-width: 768px){
+
+	header{
+		height: 70vh;
+	}
+
+	header nav.desktop{
+		display: none;
+	}
+
+	header nav.mobile{
+		display: block;
+	}
+
+	header .chamada1{
+		float: right;
+		margin-top: 205px;
+		margin-left: 0;
+		width: 90%;
+		margin-right: 0;
+		text-align: left;
+}
+
+	.chamada1 h2{
+		font-size: 30px;
+	}
+
+	.half1-sessao1-home{
+		width: 100%;
+		float: none;
+		display: inline-block;
+		text-align: center;
+}
+
+	.half1-wraper-sessao1-home{
+		position: static;
+		display: inline-block;
+}
+
+	.btn1{
+		display: inline-block;
+}
+
+	.half2-sessao1-home{
+		display: none;
+}
+
+	section.sessao2-home img{
+		position: relative;
+		left: 0;
+		top: 80px;
+		max-width: 100%;
+}
+	
+	section.sessao3-home{
+		display: inline-block;
+	}
+
+	.side1-sessao3-home{
+		width: 100%;
+		float: none;
+		display: inline-block;
+		padding: 40px 0 40px 4%;
+		background-color: #835FA7;
+}
+
+	.side1-wraper-sessao3-home{
+		float: left;
+		max-width: 500px;
+		margin-right: 40px;
+}
+
+	.side2-sessao3-home{
+		width: 100%;
+		float: none;
+		display: inline-block;
+		padding: 40px 4% 40px 0;
+}
+
+	section.sessao-final-home{
+		text-align: center;
+	}
+	
+	.form-sessao-final{
+		width: 80%;
+		float: none;
+		display: inline-block;
+		text-align: center;
+}
+	.form-sessao-final p{
+		display: inline-block;
+	}
+
+	.form-sessao-final form{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.input-wraper{
+		display: inline-block;
+	}
+
+	.w50{
+		display: inline-block;
+		float: none;
+	}
+
+	.mapa{
+		width:80%;
+		float: none;
+		display: inline-block;
+		margin-top: 30px;
+}
+	
+	.mapa-wraper{
+		margin: 0 auto;
+}
+
+	footer{
+		text-align: center;
+	}
+
+	footer p:nth-of-type(1){
+		float: none;
+		margin-left: 0;
+		display: inline-block;
+		width: 100%;
+}
+
+	footer p:nth-of-type(2){
+		float: none;
+		margin-right: 0;
+		display: inline-block;
+		width: 100%;
+		margin-top: 10px;
+}
+
+}
+
+@media screen and (max-width:580px){
+
+	.form-sessao-final{
+		width:100%;
+		float: none;
+		display: inline-block;
+}
+
+	.mapa{
+		width:90%;
+}
+}
+
+
+
+
+
+
+
+

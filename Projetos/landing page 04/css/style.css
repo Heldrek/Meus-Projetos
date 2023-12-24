@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: tahoma;
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	margin: 0 auto;
+	max-width:1000px;
+}
+
+header{
+	padding: 55px 2%;
+	background-color: #B4B4B4;
+}
+
+.logo1{
+	float: left;
+	width: 180px;
+	height: 50px;
+	margin-top: -38px;
+}
+
+.logo2{
+	float: right;
+	width: 180px;
+	height: 50px;
+	margin-top: -38px;
+}
+
+/*********************/
+
+section.banner-form{
+	padding: 0 0;
+}
+
+section.banner-form .bg{
+	width: 100%;
+	height: 600px;
+	background-image: url("../images/bg-form.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.form-content{
+	width: 400px;
+	height: 630px;
+	background-color: white;
+	position: absolute;
+	top: -15px;
+	right: 20px;
+	box-shadow: 2px 2px 2px 1px #d2d2d2;
+	z-index: 55;
+}
+
+.form-content h2{
+	width: 100%;
+	padding: 40px 30px;
+	background-color: #D2D2D2;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+form{
+	width: 100%;
+	padding: 0 4%;
+}
+
+form .input-form{
+	margin-top: 25px;
+}
+
+.input-form p{
+	color: #b4b4b4;
+}
+
+.input-form input[type=text]{
+	width: 100%;
+	height: 50px;
+	margin-top: 6px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	line-height: 50px;
+}
+
+.input-form input[type=text]::placeholder{
+	color: #b4b4b4;
+}
+
+.input-form input[type="submit"]{
+	background-color: #033C50;
+	height: 55px;
+	width: 100%;
+	color: white;
+	font-size:25px;
+	cursor: pointer;
+	border: 0;
+}
+
+.input-form:last-child p{
+	margin-top: 40px;
+}
+
+/*********************/
+
+section.sessao2{
+	padding: 0 0;
+}
+
+section.sessao2 > .center{
+	position:relative;
+}
+
+.arrow{
+	width: 60px;
+	height: 60px;
+	position:absolute;
+	left:50%;
+	top:-22px;
+	background-image: url(../images/seta.png);
+	background-size: 100% 100%;
+	margin-left: -30px;
+}
+
+.texto-sessao2{
+	width: 100%;
+	padding:70px 0;
+	text-align: center;
+	background-color: #033C50;
+}
+
+.texto-sessao2 h2{
+	color: white;
+	font-size:22px;
+	font-weight: normal;
+}
+
+.texto-sessao2 p{
+	color: white;
+	font-size: 17px;
+	margin-top: 15px;
+}
+
+/*******************/
+
+section.sessao3{
+	padding: 0 0;
+}
+
+.display-flex{
+	width: 100%;
+	display: flex;
+}
+
+.img-flex{
+	width: 60%;
+	background-image: url("../images/mosaico1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.texto-flex{
+	width: 40%;
+	padding:35px 30px;
+	background-color: #95B1DB;
+}
+
+.texto-flex p{
+	color: white;
+	line-height: 25px;
+}
+
+/********************/
+
+
+footer .center{
+	padding: 25px 0;
+	background-color: #8197B8;
+	text-align: center;
+}
+
+footer .center img{
+	width: 120px;
+	height: 60px;
+}
+
+footer .center p{
+	line-height: 27px;
+	color: white;
+}
+
+@media screen and (max-width:975px){
+
+	section.banner-form .bg{
+		text-align: center;
+		position:relative;
+		height: auto;
+		padding: 40px 0;
+}
+
+	.form-content{
+		width: 400px;
+		height: 600px;
+		position:static;
+		display: inline-block;
+		box-shadow:none;
+}
+
+}
+
+@media screen and (max-width:768px){
+
+	.display-flex{
+		width: 100%;
+		display: block;
+}
+
+	.img-flex{
+		width: 100%;
+		padding-top: 80%;
+		display: inline-block;
+	}
+
+	.texto-flex{
+		width: 100%;
+		padding:35px 30px;
+		display: inline-block;
+		margin-top: -4px;
+}
+}
